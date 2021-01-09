@@ -1,0 +1,38 @@
+nav {
+    background: #1D232F;
+    padding: 5px;
+    }
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size:large;
+    }
+nav button {
+    background-color: #1D232F ;
+    color: white;
+    border-radius: 4px;
+    border-color: white;
+    }
+.website-name {
+    font-weight: bold;
+}
+nav div{
+margin-top: 6px;
+}
+.profile-links {
+    background-color: ##1D232F ;
+    color: antiquewhite;
+    padding: 1px;
+    border-style: outset;
+    border-radius: 4px;
+    border-color: white;
+}
+li a {
+    text-decoration: none;
+    color: rgb(8, 8, 75)
+    font-weight: bold;
+}
+footer {
+    background-color: #1D232F;
+    color: white;
+}
