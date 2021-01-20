@@ -1,43 +1,133 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
         <title>Good Movies</title>
-        <link rel="stylesheet" href="my_profile.css"
+    
     </head>
 
     <body>
-        <nav>
-        <a class="website-name" href="https://google.pl">Good movies</a>
-
-        <form>
-            <input type="text" placeholder="Whats ur favourite dog">
-            <button type="submit">Search</button>
-        </form>
-        <div>
-            <a class="profile-links" href="https://google.pl">Moj profil</a>
-            <a class="profile-links" href="https://google.pl">Zaloguj sie</a>
-        </div>
-        </nav>
-
-        <div>
-            <img src="img/large-pumpkin-1387927.jpg" 
-            alt="Pumpkin" width="300" height="300">
-            <h3>IMIE I NAZWISKO</h3>
-            <div>Konto aktywne od 09.12.2021</div>
+        <div class="bg-dark pb-3">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand text-primary" href="index.html">Good movies</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="search-form input-group mr-4">
+                            <input class="form-control" type="search" placeholder="np. tytuł filmu">
+                            <button class="btn btn-light input-group-append btn-sm">
+                                Szukaj
+                            </button>
+                        </form>
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active border rounded border-light my-3 my-lg-0 pl-3 p-lg-2"
+                               href="my_profile.html">
+                                Mój profil</a>
+                            <a class="nav-item nav-link ml-lg-4" href="login.html">Zaloguj</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
         
-            <ul>
-                <li><a href="https://google.pl">Recenzje</a></li>
-                <li><a href="https://google.pl">Polecone</a></li>
-                <li><a href="https://google.pl">Ocenione</a></li>
-                <li><a href="https://google.pl">Ulubione</a></li>
-            </ul>
-       
-            <footer>
-                <div>All rights reserved © 2021</div>
-            </footer>
+        <main>
+            <section class="bg-dark text-light">
+                <div class="container pb-4">
+                    <div class="row flex-column align-items-center">
+                        <img class="my-profile-photo rounded-circle"
+                            src="https://pbs.twimg.com/profile_images/1169281590012329984/a63UqXDB.jpg" alt="My profile photo">
+                        <h4 class="mt-3">IMIĘ NAZWISKO</h4>
+                        <div>Konto aktywne od 09.12.2021 r.</div>
+                    </div>
+                </div>
+                <div class="container pb-4">
+                    <ul class="nav nav-pills mt-3 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-reviews-tab" data-toggle="pill" href="#pills-reviews"
+                               role="tab">2 Recenzje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-recommended-tab" data-toggle="pill" href="#pills-recommended"
+                               role="tab">3 Polecone
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-rated-tab" data-toggle="pill" href="#pills-rated"
+                               role="tab">1 Oceniony</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-favourite-tab" data-toggle="pill" href="#pills-favourite"
+                               role="tab">2 Ulubione</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active " id="pills-reviews" role="tabpanel">
+                                <div class="card my-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-2">
+                                            <img class="card-img" src="https://data.whicdn.com/images/326598395/original.jpg" alt="Movie poster">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="card-body">
+                                                <div class="content">
+                                                    <a href="#"><h5 class="card-title">Tytuł zrecenzowanego filmu</h5></a>
+                                                    <p class="card-text">
+                                                        This is a wider card with supporting text below as a
+                                                        natural lead-in to additional content. This content is a little bit
+                                                        longer.
+                                                    </p>
+                                                    <div class="text-right">
+                                                        <div class="btn-group" role="group">
+                                                            <a class="btn btn-primary">Dodaj do ulubionych</a>
+                                                            <a class="btn btn-secondary">Edytuj</a>
+                                                            <a class="btn btn-danger">Usuń</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="tab-pane fade" id="pills-recommended" role="tabpanel">
+                                Polecone
+                            </div>
+                            <div class="tab-pane fade" id="pills-rated" role="tabpanel">
+                                Ocenione
+                            </div>
+                            <div class="tab-pane fade" id="pills-favourite" role="tabpanel">
+                                Ulubione
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
+        
+        </main>  
 
+        <footer class="footer bg-primary text-light text-center">
+            All rights reserved © 2021
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+         
     </body>
 </html>
